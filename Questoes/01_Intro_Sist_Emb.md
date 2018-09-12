@@ -1,4 +1,5 @@
 1. O que são sistemas embarcados?
+	Os sistemas embarcados possui várias definições. De acordo com Barr e Ganssle o sistema embarcado é o conjunto de hardware e software projetados para executar alguma fun
 
 2. O que são sistemas microprocesssados?
 
