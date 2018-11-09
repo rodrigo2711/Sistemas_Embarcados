@@ -6,3 +6,21 @@
 - 100us depois, o MSP430 recebe os bytes `0x01` e `0x02`, e envia o byte menos significativo e o mais significativo da conversão de 10 bits, nesta ordem.
  
 Escreva o código para o Raspberry Pi executar este protocolo, de forma a obter conversões a cada 10 ms. A cada 1 segundo ele deve apresentar no terminal a média das últimas 100 amostras.
+
+cahr d[2];
+while(1){
+  soma = 0;
+    for(i=0; i<100;i++){
+      d[0] = 0x55;
+      write(12cfd, d, 1);  
+      uleep(100);
+      read(12cfd, d, d);
+      soma += d[0] + (d[1]<<8);
+      usleep(10000);
+}
+soma +=50;
+soma /= 100;
+printf(" media = %d /n, soma);
+
+
+i2c = HalfDuplex
